@@ -10,7 +10,7 @@ Deploying Spring Boot with MongoDB as Containers Using Docker and Docker Compose
    **`docker run -p 8080:8080 --name springboot-mongodb --link sampletestappmongodb:mongo -d springboot-mongodb:1.0`**
 - [x] check docker running containers  **`docker ps`** it should display two container ids
 - [x] check logs of spring boot image **`docker logs springboot-mongodb`**
-- [x] if all good access your api  :tada:
+- [x] if all good access your api
 ```bash
 curl --location --request POST 'http://localhost:8080/books' \
 --header 'Content-Type: application/json' \
